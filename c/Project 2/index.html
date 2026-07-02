@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Institute of Technology</title>
+    <meta
+      name="description"
+      content="Global Institute of Technology is a modern college management landing page showcasing academics, admissions, facilities, and campus life."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="#home">
+          <span class="brand-mark">GIT</span>
+          <span>
+            <strong>Global Institute</strong>
+            <small>of Technology</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#admissions" class="nav-link">Admissions</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container reveal">
+          <p class="hero-badge">Since 1998 • Excellence in Education</p>
+          <h1>Global Institute of Technology</h1>
+          <p class="hero-subtitle" id="typingText"></p>
+          <div class="hero-actions">
+            <a href="#admissions" class="btn btn-primary">Apply Now</a>
+            <a href="#courses" class="btn btn-secondary">Explore Courses</a>
+          </div>
+          <div class="scroll-indicator">
+            <span></span>
+            <small>Scroll</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About Our Institution</p>
+            <h2>Shaping Bright Futures with Innovation</h2>
+            <p>
+              We blend academic rigor, practical learning, and a vibrant campus environment to produce leaders for the future.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="card image-card reveal">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="Students collaborating in a modern classroom" />
+            </div>
+
+            <div class="about-content reveal">
+              <div class="info-stack">
+                <article class="info-card">
+                  <h3>Mission</h3>
+                  <p>To deliver transformative education that nurtures creativity, discipline, and global competence.</p>
+                </article>
+                <article class="info-card">
+                  <h3>Vision</h3>
+                  <p>To become a premier institution known for research, innovation, and employable graduates.</p>
+                </article>
+              </div>
+
+              <div class="feature-grid">
+                <article class="feature-card">
+                  <h3>Experienced Faculty</h3>
+                  <p>Learn from mentors with strong academic and industry backgrounds.</p>
+                </article>
+                <article class="feature-card">
+                  <h3>Modern Infrastructure</h3>
+                  <p>State-of-the-art labs, smart classrooms, and collaborative spaces.</p>
+                </article>
+                <article class="feature-card">
+                  <h3>Excellent Placement</h3>
+                  <p>Our graduates secure opportunities with top recruiters across industries.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats-section">
+        <div class="container stats-grid">
+          <div class="stat-card reveal">
+            <div class="counter" data-target="12000">0</div>
+            <p>Students</p>
+          </div>
+          <div class="stat-card reveal">
+            <div class="counter" data-target="450">0</div>
+            <p>Faculty</p>
+          </div>
+          <div class="stat-card reveal">
+            <div class="counter" data-target="75">0</div>
+            <p>Courses</p>
+          </div>
+          <div class="stat-card reveal">
+            <div class="counter" data-target="96">0</div>
+            <p>Placement</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="courses">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Academic Programs</p>
+            <h2>Choose the Path That Fits Your Future</h2>
+          </div>
+
+          <div class="filter-bar reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="engineering">Engineering</button>
+            <button class="filter-btn" data-filter="arts">Arts</button>
+            <button class="filter-btn" data-filter="commerce">Commerce</button>
+            <button class="filter-btn" data-filter="management">Management</button>
+          </div>
+
+          <div class="course-grid">
+            <article class="course-card reveal" data-category="engineering">
+              <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80" alt="Engineering classroom" />
+              <div class="course-body">
+                <h3>Engineering</h3>
+                <p>Build robust solutions with industry-linked curriculum and lab-driven learning.</p>
+              </div>
+            </article>
+            <article class="course-card reveal" data-category="arts">
+              <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=900&q=80" alt="Arts classroom" />
+              <div class="course-body">
+                <h3>Arts</h3>
+                <p>Explore creative disciplines with a strong foundation in culture and design.</p>
+              </div>
+            </article>
+            <article class="course-card reveal" data-category="commerce">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Commerce classroom" />
+              <div class="course-body">
+                <h3>Commerce</h3>
+                <p>Develop financial acumen and business insight through practical case studies.</p>
+              </div>
+            </article>
+            <article class="course-card reveal" data-category="management">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Management study session" />
+              <div class="course-body">
+                <h3>Management</h3>
+                <p>Prepare for leadership roles through enterprise-focused learning modules.</p>
+              </div>
+            </article>
+            <article class="course-card reveal" data-category="engineering">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Computer science lab" />
+              <div class="course-body">
+                <h3>Computer Science</h3>
+                <p>Master programming, systems, and emerging technologies in a future-ready lab.</p>
+              </div>
+            </article>
+            <article class="course-card reveal" data-category="engineering">
+              <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80" alt="Artificial intelligence concept" />
+              <div class="course-body">
+                <h3>Artificial Intelligence</h3>
+                <p>Learn machine learning, automation, and smart system design with practical projects.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="admissions">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Admissions</p>
+            <h2>Simple Admission Pathways for Every Aspirant</h2>
+          </div>
+
+          <div class="admission-wrapper reveal">
+            <div class="table-card">
+              <table id="feeTable">
+                <thead>
+                  <tr>
+                    <th data-sort="course">Course</th>
+                    <th data-sort="duration">Duration</th>
+                    <th data-sort="fee">Annual Fee</th>
+                    <th data-sort="seats">Seats</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>B.Tech Computer Science</td><td>4 Years</td><td>180000</td><td>120</td></tr>
+                  <tr><td>BBA Management</td><td>3 Years</td><td>95000</td><td>80</td></tr>
+                  <tr><td>B.Com Commerce</td><td>3 Years</td><td>70000</td><td>90</td></tr>
+                  <tr><td>B.A. English</td><td>3 Years</td><td>65000</td><td>70</td></tr>
+                  <tr><td>M.Tech AI</td><td>2 Years</td><td>220000</td><td>40</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="admission-card">
+              <h3>Ready to Apply?</h3>
+              <p>Choose a course and begin your application journey with us today.</p>
+              <button class="btn btn-primary apply-open">Apply Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="applyModal" aria-hidden="true">
+          <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close form">×</button>
+            <h3>Admission Application</h3>
+            <form id="applyForm" novalidate>
+              <label>
+                Name
+                <input type="text" name="name" />
+                <small class="form-error"></small>
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" />
+                <small class="form-error"></small>
+              </label>
+              <label>
+                Course
+                <input type="text" name="course" />
+                <small class="form-error"></small>
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" />
+                <small class="form-error"></small>
+              </label>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="facilities">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Campus Facilities</p>
+            <h2>Everything You Need to Learn and Grow</h2>
+          </div>
+
+          <div class="facility-grid">
+            <article class="facility-card reveal">
+              <div class="facility-icon">📚</div>
+              <h3>Library</h3>
+              <p>Access a rich collection of resources, journals, and quiet study zones.</p>
+            </article>
+            <article class="facility-card reveal">
+              <div class="facility-icon">💻</div>
+              <h3>Computer Lab</h3>
+              <p>Engage with modern systems, coding labs, and industry-relevant tools.</p>
+            </article>
+            <article class="facility-card reveal">
+              <div class="facility-icon">🏠</div>
+              <h3>Hostel</h3>
+              <p>Comfortable accommodation with safety, study rooms, and networking spaces.</p>
+            </article>
+            <article class="facility-card reveal">
+              <div class="facility-icon">⚽</div>
+              <h3>Sports</h3>
+              <p>Promote wellness through courts, grounds, and guided fitness programs.</p>
+            </article>
+            <article class="facility-card reveal">
+              <div class="facility-icon">🚌</div>
+              <h3>Transport</h3>
+              <p>Reliable shuttle services connect our campus to major city routes.</p>
+            </article>
+            <article class="facility-card reveal">
+              <div class="facility-icon">📶</div>
+              <h3>WiFi</h3>
+              <p>High-speed campus connectivity supports learning, research, and collaboration.</p>
+            </article>
+            <article class="facility-card reveal">
+              <div class="facility-icon">🔬</div>
+              <h3>Research Center</h3>
+              <p>Innovation labs and mentorship for student-led research projects.</p>
+            </article>
+            <article class="facility-card reveal">
+              <div class="facility-icon">🎭</div>
+              <h3>Auditorium</h3>
+              <p>Host seminars, cultural events, and inspiring guest lectures.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Campus Gallery</p>
+            <h2>Moments from Our Vibrant Campus</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <a class="gallery-item reveal" href="#" data-full="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80" data-title="Classroom Setting">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Classroom setting" loading="lazy" />
+            </a>
+            <a class="gallery-item reveal" href="#" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80" data-title="Student Collaboration">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Student collaboration" loading="lazy" />
+            </a>
+            <a class="gallery-item reveal" href="#" data-full="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=1400&q=80" data-title="Cafeteria Dining">
+              <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80" alt="Cafeteria dining" loading="lazy" />
+            </a>
+            <a class="gallery-item reveal" href="#" data-full="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1400&q=80" data-title="Study Hall">
+              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" alt="Study hall" loading="lazy" />
+            </a>
+            <a class="gallery-item reveal" href="#" data-full="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1400&q=80" data-title="Library Reading Area">
+              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" alt="Library reading area" loading="lazy" />
+            </a>
+            <a class="gallery-item reveal" href="#" data-full="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" data-title="Campus Life">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Campus life" loading="lazy" />
+            </a>
+          </div>
+        </div>
+
+        <div class="lightbox" id="lightbox" aria-hidden="true">
+          <div class="lightbox-content">
+            <button class="lightbox-control prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+            <img id="lightboxImage" src="" alt="Selected gallery image" />
+            <button class="lightbox-control next" id="lightboxNext" aria-label="Next image">›</button>
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery">×</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="placement">
+        <div class="container placement-grid">
+          <div class="reveal">
+            <p class="eyebrow">Placements</p>
+            <h2>Trusted by Top Recruiters</h2>
+            <p>Our learners are prepared for real-world opportunities through internships, mentoring, and career support.</p>
+          </div>
+          <div class="recruiter-grid reveal">
+            <div class="recruiter-card">TCS</div>
+            <div class="recruiter-card">Infosys</div>
+            <div class="recruiter-card">Wipro</div>
+            <div class="recruiter-card">Accenture</div>
+            <div class="recruiter-card">Capgemini</div>
+            <div class="recruiter-card">IBM</div>
+          </div>
+          <div class="placement-stats reveal">
+            <div><strong>96%</strong><span>Placement Rate</span></div>
+            <div><strong>850+</strong><span>Job Offers</span></div>
+            <div><strong>120+</strong><span>Partner Companies</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Student Voices</p>
+            <h2>What Our Students Say</h2>
+          </div>
+          <div class="testimonial-slider reveal">
+            <div class="testimonial-track" id="testimonialTrack">
+              <article class="testimonial-card active">
+                <p>“The campus culture, faculty support, and practical learning are exceptional. I feel industry-ready every day.”</p>
+                <h3>Riya Sharma</h3>
+                <span>B.Tech AI</span>
+              </article>
+              <article class="testimonial-card">
+                <p>“The leadership training and placement assistance helped me secure a dream role even before graduation.”</p>
+                <h3>Arjun Mehta</h3>
+                <span>BBA Management</span>
+              </article>
+              <article class="testimonial-card">
+                <p>“Modern labs and inspiring teachers shaped my confidence and curiosity in a powerful way.”</p>
+                <h3>Neha Verma</h3>
+                <span>Computer Science</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="news">
+        <div class="container news-grid">
+          <div class="news-card reveal">
+            <h3>Latest News</h3>
+            <ul>
+              <li>New AI innovation lab inaugurated for student research.</li>
+              <li>Global symposium on sustainable engineering begins next week.</li>
+              <li>Faculty development program launched for digital teaching.</li>
+            </ul>
+          </div>
+          <div class="news-card reveal">
+            <h3>Upcoming Events</h3>
+            <ul>
+              <li>Admissions open house on July 10.</li>
+              <li>Industry connect seminar with leading recruiters.</li>
+              <li>Annual cultural fest from August 22 to 24.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-info reveal">
+            <p class="eyebrow">Contact Us</p>
+            <h2>Visit or Reach Out</h2>
+            <p><strong>Address:</strong> 45 Innovation Avenue, New Delhi, India</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> admissions@git.edu</p>
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Campus building map placeholder" />
+          </div>
+
+          <div class="contact-card reveal">
+            <form id="contactForm" novalidate>
+              <label>
+                Name
+                <input type="text" name="contactName" />
+                <small class="form-error"></small>
+              </label>
+              <label>
+                Email
+                <input type="email" name="contactEmail" />
+                <small class="form-error"></small>
+              </label>
+              <label>
+                Subject
+                <input type="text" name="subject" />
+                <small class="form-error"></small>
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="5"></textarea>
+                <small class="form-error"></small>
+              </label>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p class="form-success" id="formSuccess"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#courses">Academics</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Social Media</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Global Institute</h3>
+          <p>Empowering Innovation Through Education.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Global Institute of Technology. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
